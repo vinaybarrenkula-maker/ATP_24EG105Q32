@@ -1,0 +1,78 @@
+GET http://localhost:4000/user-api/users
+
+###post the request 
+POST http://localhost:4000/user-api/users
+Content-Type: application/json
+
+{
+    "username":"vinay",
+    "password":"vinay",
+    "email":"vinay@gmail.com",
+    "age":21
+}
+
+###
+GEt  http://localhost:4000/user-api/users
+
+###
+DELETE  http://localhost:3000/user-api/users 
+
+
+### login request 
+POST http://localhost:4000/user-api/auth
+Content-Type: application/json
+
+{
+    "password":"vinay",
+    "email":"vinay@gmail.com"
+}
+### add cart to the user 
+PUT http://localhost:4000/user-api/cart/product_id/69adb02af1736d9f025c3438
+
+
+###
+GEt http://localhost:4000/user-api/users
+Cookie: token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZpbmF5QGdtYWlsLmNvbSIsImlhdCI6MTc3MzMwMDY3NCwiZXhwIjoxNzczMzA0Mjc0fQ.QiUDX8jCBbqJT9oF6zSMRAluzFhlCPJ_6tYbKpv_Vko"
+
+###
+Post  http://localhost:4000/product-api/products
+Content-Type: application/json
+
+{
+  "productId":101,
+  "productName":  "Television", 
+  "price":12000 ,
+  "brand":"samsung"
+    }
+
+###
+Post  http://localhost:4000/product-api/products
+Content-Type: application/json
+
+{
+  "productId":103,
+  "productName":  "FRIDGE", 
+  "price":12000 ,
+  "brand":"samsung"
+    }
+
+###
+GET http://localhost:4000/product-api/products
+
+###
+PUT  http://localhost:4000/product-api/products/69adab22a93e5fbe2afc28a0
+Content-Type: application/json
+
+{
+    "prdouctId":102,
+    "productName":"television",
+    "price":20000,
+    "brand":"LG"
+}
+
+###
+GET http://localhost:4000/product-api/products/69adab22a93e5fbe2afc28a0
+
+###
+DELETE    http://localhost:4000/product-api/products/69adb02af1736d9f025c3438
+
