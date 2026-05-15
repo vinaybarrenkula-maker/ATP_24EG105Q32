@@ -1,0 +1,82 @@
+### Read all users protected api route
+GET http://localhost:4000/user-api/users
+
+### Read a user by id
+GET http://localhost:4000/user-api/user
+
+### Create a new user
+POST http://localhost:4000/user-api/users
+Content-Type: application/json
+
+{
+    "username":"venkat",
+    "password":"venkat",
+    "email":"roop@gmail.com",
+    "age":19
+}
+
+### Update an existing user
+PUT http://localhost:4000/user-api/users/69b1a346716af573f70db69e
+Content-Type: application/json
+
+{
+    "username":"krish",
+    "password":"$2b$10$9mtSfI/0acCy2tXY9/9Vq.H4slBAdsniRha5uOmzd8J/rbW9lasNS",
+    "email":"roop@gmail.com",
+    "age":20
+}
+
+### Delete a user by id
+DELETE http://localhost:3000/user-api/users/69abf80b9a1fb4a9310b02a1
+
+### user login
+POST http://localhost:4000/user-api/auth
+Content-Type: application/json
+
+{
+    "email":"roop@gmail.com",
+    "password":"venkat"
+}
+
+###
+PUT http://localhost:4000/user-api/cart/product-id/69abd44aa7e7a94c10a6f6dd
+
+
+
+
+
+
+
+
+
+
+### Read all products
+GET http://localhost:3000/product-api/products
+
+### Read a product by id
+GET http://localhost:3000/product-api/products/3
+
+### Create a new product
+POST http://localhost:3000/product-api/products
+Content-Type: application/json
+
+{
+    "productId":2,
+    "productName":"tv",
+    "price":45000,
+    "brand":"samsung"
+}
+
+### Update an existing product
+PUT http://localhost:3000/product-api/products
+Content-Type: application/json
+
+{
+    "productId":1,
+    "productName":"Laptop",
+    "price":45000,
+    "brand":"Acer"
+}
+
+### Delete a product by id
+DELETE http://localhost:3000/product-api/products/1

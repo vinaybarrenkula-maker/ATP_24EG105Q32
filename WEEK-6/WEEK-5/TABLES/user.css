@@ -1,0 +1,24 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+table,td,th{
+    border: 0px  solid black;
+    margin: auto;
+    border-collapse: collapse;
+    padding: 10px;
+    align-items: center;
+}
+img{
+    width:100px;
+    border-radius: 90px;
+}
+tr:nth-child(even){
+    background-color: aquamarine;
+}
+tr:nth-child(odd){
+    background-color: rgb(160, 179, 173);
+}
+body{
+    margin:20px;
+}
